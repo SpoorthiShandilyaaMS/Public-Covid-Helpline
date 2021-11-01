@@ -1,0 +1,2 @@
+# Public-Covid-Helpline
+An android application that provide a common platform for the people belonging to a constituency to create awareness about the different public issues. Public issues can be acknowledged to the representative. Promotes active participation of citizens in governance. Using this application user can reach out to information regarding status of a particular constituency and get COVID-19 Updates, dos and don’ts of the pandemic spread, news and media bulletin which is the need of an hour.
