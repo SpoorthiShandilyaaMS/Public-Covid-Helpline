@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddComplaint"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:padding="30dp">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="95dp"
+        android:src="@drawable/pubimg" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/bungee"
+        android:text="REGISTER COMPLAINT"
+        android:textColor="#000"
+        android:textSize="20sp" />
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp">
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:hint="Select Constituency"
+            android:id="@+id/complaintmenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="none"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="20dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="60"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/complainttitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title here..."
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="20dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="500"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/complaintdesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description here..."
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/complaintchooseimage"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:elevation="0dp"
+            android:fontFamily="sans-serif"
+            android:text="Upload"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp"
+            app:backgroundTint="#F3715F"
+            app:icon="@drawable/ic_baseline_image_search_24"
+            app:iconSize="35dp" />
+
+
+    <Button
+        android:id="@+id/complaintsubmitbtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="50dp"
+        android:background="#FF000000"
+        android:fontFamily="@font/aclonica"
+        android:onClick="add_complaint"
+        android:text="SUBMIT"
+        android:textColor="#FFFDFD"
+        android:textColorHighlight="#605D5D"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/purple_200"
+        app:icon="@drawable/iconssubmit" />
+
+</LinearLayout>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".NewCard">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_covid_background"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imagenewid"
+            android:layout_width="150dp"
+            android:layout_height="160dp"
+            android:layout_gravity="start"
+            android:src="@drawable/iconnews" />
+
+
+        <TextView
+            android:id="@+id/firstnewid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@id/imagecoid"
+            android:fontFamily="@font/bungee"
+            android:paddingLeft="15dp"
+            android:text="News Feed"
+            android:textColor="@color/blue_btn_bg_color"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="#00000000"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF">
+
+                    <ImageView
+                        android:id="@+id/new1id"
+                        android:layout_width="120dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/iconslocation" />
+
+                    <TextView
+                        android:id="@+id/new1ttid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/new1id"
+                        android:fontFamily="@font/antic"
+                        android:padding="20dp"
+                        android:text="Gives user the updates on their constituencies"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="#00000000"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFCFC">
+
+                    <ImageView
+                        android:id="@+id/new2id"
+                        android:layout_width="120dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/politics" />
+
+                    <TextView
+                        android:id="@+id/new2ttid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_toRightOf="@+id/new2id"
+                        android:fontFamily="@font/antic"
+                        android:padding="20dp"
+                        android:text="Events of the city and the region and General political events."
+                        android:textColor="@color/black"
+                        android:textSize="15sp"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="#00000000"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFCFC">
+
+                    <ImageView
+                        android:id="@+id/new3id"
+                        android:layout_width="120dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/newss" />
+
+                    <TextView
+                        android:id="@+id/new3ttid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_toRightOf="@+id/new3id"
+                        android:fontFamily="@font/antic"
+                        android:padding="20dp"
+                        android:text="Your readers can check the news on the go, on the way to work, anytime!"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="#00000000"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFCFC">
+
+                    <ImageView
+                        android:id="@+id/new4id"
+                        android:layout_width="120dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/correct" />
+
+                    <TextView
+                        android:id="@+id/new4ttid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_toRightOf="@+id/new4id"
+                        android:fontFamily="@font/antic"
+                        android:padding="20dp"
+                        android:text="Monitor both the relevance of published content and the trustworthiness of information sources"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="#00000000"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFCFC">
+
+                    <ImageView
+                        android:id="@+id/new5id"
+                        android:layout_width="120dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/iconscoronavirus"/>
+
+                    <TextView
+                        android:id="@+id/new5ttid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_toRightOf="@+id/new5id"
+                        android:fontFamily="@font/antic"
+                        android:padding="20dp"
+                        android:text="Provide the latest information about the Corona virus and also about health and safety resources"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/startedid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FF000000"
+                android:fontFamily="@font/bungee"
+                android:text="Get Started"
+                android:textColor="#FFFDFD"
+                android:textColorHighlight="#605D5D"
+                android:textSize="15sp"
+                app:backgroundTint="#7089B3" />
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>

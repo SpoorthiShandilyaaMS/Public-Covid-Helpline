@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+   tools:context=".vaccineview.Vaccination">
+
+
+        <ImageView
+            android:id="@+id/imagevacid"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/covidvaccilogo" />
+
+        <ProgressBar
+        android:id="@+id/progressbarvaccid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"/>
+
+    <RelativeLayout
+        android:id="@+id/relvaccid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imagevacid">
+
+        <LinearLayout
+            android:id="@+id/vaclinid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+            <com.google.android.material.textfield.TextInputLayout
+                android:hint="PinCode here"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:background="@drawable/rounded_vacc_background">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/pincodeid"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+
+                    android:drawableLeft="@drawable/iconspincod"
+                    android:drawablePadding="25dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:id="@+id/searchhbtnid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#32cd32"
+                android:layout_marginLeft="75dp"
+                android:layout_marginRight="75dp"
+                android:fontFamily="@font/aclonica"
+                android:letterSpacing="0.2"
+                android:text="Search"
+                android:layout_marginTop="20dp"
+                android:textColor="#FFFDFD"
+                android:textColorHighlight="#605D5D"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:backgroundTint="#32cd32"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/vaccrecycleview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/relvaccid"
+            android:layout_marginLeft="10dp" />
+</RelativeLayout>

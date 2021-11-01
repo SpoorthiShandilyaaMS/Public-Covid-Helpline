@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Helpline">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/clr_primary">
+        <ImageView
+            android:id="@+id/virus10"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/coronavirusimgg"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_toStartOf="@+id/virus10"
+            android:src="@drawable/coronavirusimgg"
+            android:layout_alignParentTop="true"
+
+            android:layout_toLeftOf="@+id/virus1" />
+
+    <TextView
+        android:id="@+id/helptitleid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:fontFamily="@font/baloo"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="COVID-19   HELPLINE"
+        android:textColor="#f58d42"
+        android:textSize="18sp"
+        android:textStyle="normal" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="#d5edec"
+        app:cardElevation="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/helpline1id"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/helpline1" />
+
+            <TextView
+                android:id="@+id/helpline1tid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/helpline1id"
+                android:fontFamily="@font/baloo"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Health Ministry Helpline"
+                android:textColor="#33516b"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/helpline1btn"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/helpline1tid"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@+id/helpline1id"
+                android:background="#00000000"
+                android:elevation="0dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/black"
+                android:textColorHighlight="#605D5D"
+                app:backgroundTint="#FFFFFF"
+                app:icon="@drawable/bluephone"
+                app:iconPadding="2dp"
+                app:iconTint="#8E141E" />
+
+            <TextView
+                android:id="@+id/helplinenum1"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/helpline1btn"
+                android:layout_below="@+id/helpline1tid"
+                android:text="1075"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                app:backgroundTint="#FFFFFF"
+                android:textColor="@color/black"
+                android:textColorHighlight="#605D5D"
+                android:layout_marginBottom="5dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="#d5edec"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/helpline2id"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/helpline2" />
+
+                <TextView
+                    android:id="@+id/helpline2tid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/helpline2id"
+                    android:fontFamily="@font/baloo"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Child Helpline"
+                    android:textColor="#33516b"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/helpline2btn"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/helpline2tid"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toRightOf="@+id/helpline2id"
+                    android:background="#00000000"
+                    android:elevation="0dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="#605D5D"
+                    app:backgroundTint="#FFFFFF"
+                    app:icon="@drawable/bluephone"
+                    app:iconPadding="2dp"
+                    app:iconTint="#8E141E" />
+                <TextView
+                    android:id="@+id/helplinenum2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_toRightOf="@+id/helpline2btn"
+                    android:layout_below="@+id/helpline2tid"
+                    android:text="1098"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    app:backgroundTint="#FFFFFF"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="#605D5D"
+                    android:layout_marginBottom="5dp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="#d5edec"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/helpline3id"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/helpline3" />
+
+                <TextView
+                    android:id="@+id/helpline3tid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/helpline3id"
+                    android:fontFamily="@font/baloo"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Mental Health Helpline"
+                    android:textColor="#33516b"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/helpline3btn"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/helpline3tid"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toRightOf="@+id/helpline3id"
+                    android:background="#00000000"
+                    android:elevation="0dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="#605D5D"
+                    app:backgroundTint="#FFFFFF"
+                    app:icon="@drawable/bluephone"
+                    app:iconPadding="2dp"
+                    app:iconTint="#8E141E" />
+                <TextView
+                    android:id="@+id/helplinenum3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_toRightOf="@+id/helpline3btn"
+                    android:layout_below="@+id/helpline3tid"
+                    android:text="08046110007"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    app:backgroundTint="#FFFFFF"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="#605D5D"
+                    android:layout_marginBottom="5dp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="#d5edec"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/helpline4id"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/helpline4" />
+
+                <TextView
+                    android:id="@+id/helpline4tid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/helpline4id"
+                    android:fontFamily="@font/baloo"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Senior Citizen Helpline"
+                    android:textColor="#33516b"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/helpline4btn"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/helpline4tid"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toRightOf="@+id/helpline4id"
+                    android:background="#00000000"
+                    android:elevation="0dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="#605D5D"
+                    app:backgroundTint="#FFFFFF"
+                    app:icon="@drawable/bluephone"
+                    app:iconPadding="2dp"
+                    app:iconTint="#8E141E" />
+                <TextView
+                    android:id="@+id/helplinenum4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_toRightOf="@+id/helpline4btn"
+                    android:layout_below="@+id/helpline4tid"
+                    android:text="14567"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    app:backgroundTint="#FFFFFF"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="#605D5D"
+                    android:layout_marginBottom="5dp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="#d5edec"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/helpline5id"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/helpline5" />
+
+                <TextView
+                    android:id="@+id/helpline5tid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/helpline5id"
+                    android:fontFamily="@font/baloo"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Ayush COVID-19 Helpline"
+                    android:textColor="#33516b"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/helpline5btn"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/helpline5tid"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toRightOf="@+id/helpline5id"
+                    android:background="#00000000"
+                    android:elevation="0dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="#605D5D"
+                    app:backgroundTint="#FFFFFF"
+                    app:icon="@drawable/bluephone"
+                    app:iconPadding="2dp"
+                    app:iconTint="#8E141E" />
+                <TextView
+                    android:id="@+id/helplinenum5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_toRightOf="@+id/helpline5btn"
+                    android:layout_below="@+id/helpline5tid"
+                    android:text="14443"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    app:backgroundTint="#FFFFFF"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="#605D5D"
+                    android:layout_marginBottom="5dp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="5dp"
+    android:padding="10dp"
+    app:cardBackgroundColor="#c7c3c1"
+    app:cardCornerRadius="20dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/datetimeid"
+            android:textStyle="bold"
+            android:fontFamily="@font/aclonica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:text="09-06-2021     11:45:55"
+            android:textColor="@color/white"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="18dp"/>
+
+
+
+
+        <ImageView
+            android:id="@+id/image1id"
+            android:layout_width="300dp"
+            android:layout_below="@id/datetimeid"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/iconsprotectionmask" />
+
+        <TextView
+            android:id="@+id/title1id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image1id"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:fontFamily="@font/baloo"
+            android:text="news news1 news1 news news1 news1"
+            android:textColor="@color/red_btn_bg_color"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/desc1id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title1id"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/aclonica"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="15dp"
+            android:text="this is news description this is news description this is news description this is news description this is news description this is news description this is news description"
+            android:textColor="@color/black"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
